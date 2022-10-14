@@ -1,0 +1,10 @@
+version: "3"
+services:
+  pulsar:
+    image: "apachepulsar/pulsar-standalone:latest"
+    volumes:
+      - ./pulsar/data:/pulsar/data
+    ports:
+      - "6650:6650"
+      - "8080:8080"
+    restart: unless-stopped
