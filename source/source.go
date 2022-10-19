@@ -45,7 +45,7 @@ func (s *Source) Parameters() map[string]sdk.Parameter {
 		ConfigTopic: {
 			Default:     "",
 			Required:    true,
-			Description: "The topic to consume.",
+			Description: "The topic to consume. (e.g. persistent://public/default/sample)",
 		},
 		ConfigSubscriptionName: {
 			Default:     "",
